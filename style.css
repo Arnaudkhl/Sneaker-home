@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    background-image: linear-gradient(#e664645b, #9198e556), url("img/img2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0 40px;
+    }
+}
+
+header .logo {
+    width: 120px;
+}
+
+header .menu {
+    color: #000000;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+header .nav {
+    position: fixed;
+    right: -50%;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    background: rgb(243, 243, 243);
+    transition: all 0.8s;
+    box-shadow: -4px -1px 44px -16px rgba(138,131,131,0.75);
+}
+
+header .nav .close-nav {
+    font-size: 50px;
+    color: #141845;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    cursor: pointer;
+}
+
+header .nav.visible {
+    right: 0;
+}
+
+header .nav ul {
+    padding: 0;
+    margin-top: 150px;
+}
+
+header .nav ul li {
+    list-style-type: none;
+    font-size: 24px;
+    color: #141845;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.banner .banner-content {
+    text-align: center;
+    width: 45%;
+}
+
+.banner .banner-content h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.banner .banner-content a {
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 40px;
+}
+
+/* CAROUSEL */ /////////////////////////////////////////////////////////////////////////
+
+.carousel .slide1 {
+    background-image: url("img/nike1.jpg");
+}
+
+.carousel .slide2 {
+    background-image: url("img/nike2.png");
+}
+
+.carousel .slide3 {
+    background-image: url("img/nike3.jpg");
+}
+
+.carousel .slide4 {
+    background-image: url("img/nike7.jpg");
+}
+
+.carousel .slide5 {
+    background-image: url("img/nike5.jpg");
+}
+
+
+.carousel .slide {
+    background-size: cover;
+    background-position: center;
+    padding-top: 50%;
+    display: none;
+}
+
+.carousel .slide:first-child {
+    display: block;
+}
+
+.last-shoes {
+    position: relative;
+}
+
+.last-shoes .left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.last-shoes .right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.best-sellers {
+    text-align: center;
+    padding: 80px 0 40px 0;
+    text-transform: uppercase;
+}
